@@ -5,16 +5,16 @@
 
   <head>
     <meta charset = "utf-8" name="viewport" content="width=device-width, initial-scale=1">
-    <title>Winnie Liang</title>
-    <link rel="stylesheet" href = "style/main.css">
+    <title>Winnie Liang | Contact</title>
+		<link rel="stylesheet" href = "style/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js"></script>
-    <script src="js/bg/indexBg.js"></script>
+    <script src="js/bg/contactBg.js"></script>
   </head>
 
   <body>
     <div id="mySidenav" class="sidenav">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
       <a href="index.html"><i class="fa fa-fw fa-home"></i>Home</a>
       <button class="dropdown-btn"><i class="fa fa-fw fa-bookmark-o"></i>Portfolios</button>
         <div class="dropdown-container">
@@ -32,8 +32,39 @@
 			<h1><button class="openbtn" onclick="openNav()">☰</button>
       <a href="index.html"><mark>&nbsp;Winnie Liang&nbsp;</mark></a></h1>
 
+      <h2><mark>&nbsp;Contact Me&nbsp;</mark></h2>
+
+      <div class="contact">
+        <form action="mailto:1126winniel@gmail.com" method="post" enctype="text/plain">
+
+          <h1>Contact me via my e-mail!</h1>
+
+          <div class="block">
+            <label><h2>Name</h2></label>
+            <input type="text" name="Name" placeholder="Your name...">
+          </div>
+
+          <div class="block">
+            <label><h2>E-mail</h2></label>
+            <input type="text" name="mail" placeholder="Your e-mail...">
+          </div>
+
+          <div class="block">
+            <label><h2>Messages</h2></label>
+            <input type="text" name="comment" placeholder="Comments, messages, feedback...">
+          </div>
+
+          <nobr><input type="submit" value="Send">
+         <input type="reset" value="Reset"></nobr>
+
+        </form>
+
+      </div>
+
     </div>
+
 		<script src="js/nav.js"></script>
+
   </body>
 
 </html>

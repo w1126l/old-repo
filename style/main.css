@@ -1,0 +1,364 @@
+
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
+
+/* formatting texts*/
+body { /* for everything */
+  margin: 10px auto;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  line-height: 1.5;
+  padding: 30px 25px;
+  transition: background-color .5s;
+}
+
+mark { /* fix for portolios */
+  background: 0;
+  /*background-color: rgba(11,39,64,0.4);*/
+  color: #0e3150;
+  text-shadow: 2px 2px 8px #f7e9e3;
+}
+
+h1 { /* name and side-nav icon */
+  padding: 0px 20px;
+  font-size: 60px;
+  display: inline;
+  text-decoration: none;
+  border-radius: 4px;
+  color: #0e3150;
+  text-shadow: 2px 2px 8px #f7e9e3;
+  position: fixed;
+  z-index: 100;
+}
+mark:hover, h1:hover, .openbtn:hover {
+  color: #3e5a72;
+}
+
+h2 { /* portfolio on-page titles */
+  font-style: italic;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: right;
+  right: 10%;
+  color: #0e3150;
+  padding: 40px 30px 10px 30px;
+}
+
+h3 { /* portfolio on-page descriptions */
+  text-align: right;
+  padding: 0px 30px 0px 80px;
+  font-size: 18px;
+  font-style: italic;
+  color: #0e3150;
+}
+
+h4 { /* portfolio on-page project titles */
+  font-size: 40px;
+  padding: 0px;
+  text-align: center;
+  font-weight: bold;
+  line-height: 20px;
+  color: #ffc0c2;
+}
+
+h6 { /* side-nav dropdown button titles */
+  display: block;
+  font-size: 16px;
+  margin: 0;
+  font-weight: lighter;
+  line-height: 0px;
+  padding: 10px;
+  color: #f7e9e3;
+  white-space: nowrap;
+}
+
+p { /* description */
+  padding: 0px 0px 5px 0px;
+  font-size: 15px;
+  text-align: center;
+}
+
+p1 { /* description notes */
+  display: block;
+  font-size: smaller;
+  font-style: italic;
+  text-align: center;
+  font-weight: lighter;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  color: #d6fcff;
+}
+
+.footer {
+  margin: 0 auto;
+  display:block;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: red;
+  color: white;
+  text-align: right;
+}
+
+/* formatting flexbox for viewing portolios */
+.flexbox-container {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+.flexbox-item {
+  width: 70%;
+  margin-top: 60px;
+  padding: 40px;
+  background-color: #f7e9e3;
+}
+
+/* embeded projects */
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+.embed-container iframe {
+  position: absolute;
+  border: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* formatting side navigation */
+.sidenav { /* actual side nav */
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #0e3150;
+  opacity: 95%;
+  overflow-x: hidden;
+  transition:0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a { /* side nav titles */
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #f7e9e3;
+  display: block;
+  transition: 0.3s;
+}
+.sidenav a:hover { /* hovering over the titles */
+  color: #f1f1f1;
+}
+
+.openbtn { /* opening side nav */
+  cursor: pointer;
+  text-decoration: none;
+  border-style: none;
+  outline-style: none;
+  background: rgba(0,0,0,0);
+  color: #0e3150;
+  text-shadow: 2px 2px 8px #f7e9e3;
+  font-size: 60px;
+}
+
+.sidenav .closebtn { /* closing side nav */
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  color: #f7e9e3;
+}
+
+/* dropdown button */
+.dropdown-btn {
+  text-decoration: none;
+  font-size: 26px;
+  padding: 10px 10px 10px 32px;
+  color: #f7e9e3;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+  transition: 0.8s;
+}
+.dropdown-btn:hover { /* hovering over button */
+  color: #f7e9e3;
+}
+
+.active { /* active dropdown button */
+  background-color: #3e5a72;
+  color: white;
+}
+
+.dropdown-btn:after {
+  content: "+";
+  font-size: 15px;
+  color: #f7e9e3;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "-";
+}
+
+/* dropdown container */
+.dropdown-container { /* inside the button(dropdown) */
+  display: none;
+  padding: 4px 0 4px 0;
+  background-color: none;
+}
+
+.about {
+  display: block;
+  position: static;
+}
+
+.about h1 {
+  display: block;
+  position: static;
+  font-style: normal;
+  font-size: 45px;
+  font-weight: normal;
+  text-align: left;
+  color: #666;
+  padding: 40px 30px 0px 30px;
+}
+
+.about h2 {
+  display: block;
+  position: static;
+  font-style: normal;
+  font-size: 30px;
+  font-weight: normal;
+  text-align: left;
+  color: #666;
+  padding: 12px 30px 0px 30px;
+}
+
+.about h3 {
+  display: block;
+  position: static;
+  padding: 0px 30px 0px 30px;
+  font-size: 20px;
+  text-align: left;
+}
+
+.about p {
+  display: block;
+  position: static;
+  padding: 0px 30px 0px 30px;
+  font-size: 20px;
+  text-align: left;
+  margin: 0;
+}
+
+.about ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #f2f2f2;
+}
+
+.contact .block {}
+
+.contact .block label {}
+
+.contact h1 { /* contact form title */
+  font-weight: bold;
+  right: 0;
+  color: black;
+  padding: 0 0 10px 0;
+  display: inline-block;
+  position: relative;
+  text-align: right;
+  font-size: 30px;
+  margin: 5px 0;
+  white-space: nowrap;
+}
+
+.contact h2 { /* contact email form titles */
+  font-style: normal;
+  right: 0;
+  color: black;
+  padding: 0;
+  display: inline-block;
+  position: relative;
+  text-align: right;
+  font-size: 25px;
+  font-weight: lighter;
+  margin: 5px 0;
+  white-space: nowrap;
+}
+
+.contact input[type=text], select {
+  width: 78%;
+  max-height: auto;
+  padding: 10px 20px;
+  display: inline-block;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  margin-top: 5px;
+  float: right;
+  clear: both;
+}
+
+.contact input[type=text]:focus {
+  width: 82%;
+  transition: width .35s ease-in-out;
+  transition: width .35s ease-in-out;
+  border: 3px solid #555;
+}
+
+.contact input[type=submit], input[type=reset] {
+  font-size: 25px;
+  width: 50%;
+  background-color: #666;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contact input[type=submit]:hover, input[type=reset]:hover {
+  background-color: #888;
+}
+
+#main { /* so texts move with the side nav */
+  transition: margin-left .5s;
+  padding: 16px;
+  display: block;
+}
+
+@media screen and (max-height: 450px) { /* for the unlikely mobile device viewers or others */
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}

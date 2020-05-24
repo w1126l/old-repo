@@ -2,54 +2,81 @@
 <!DOCTYPE html>
 
 <html>
+
   <head>
-    <meta charset = "utf-8">
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
     <title>Winnie Liang | Art-02</title>
-    <link rel = "stylesheet" type = "text/css" href = "style.css">
+    <link rel="stylesheet" type="text/css" href="style/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js"></script>
+    <script src="js/bg/portfolioArt02Bg.js"></script>
   </head>
 
   <body>
-    <div class = "header">
-      <a href = "index.html"><h1>Winnie Liang</h1></a>
-      <ul>
-        <li><h3><a href = "portfolio.html">Other Portfolios</a></h3></li>
-      </ul>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="index.html"><i class="fa fa-fw fa-home"></i>Home</a>
+      <button class="dropdown-btn"><i class="fa fa-fw fa-bookmark-o"></i>Portfolios</button>
+      <div class="dropdown-container">
+        <a href="art75.html"><h6><i class="fa fa-fw fa-paint-brush" style="font-size:16px; line-height:0px;"></i></i>&nbsp;Art-75: Digital Video</h6></a>
+        <a href="art02.html"><h6><i class="	fa fa-fw fa-newspaper-o" style="font-size:16px; line-height: 0px;"></i></i>&nbsp;Art-02: Artists in Culture</h6></a>
+        <a href="art74.html"><h6><i class="fa fa-fw fa-paint-brush" style="font-size:16px; line-height: 0px;"></i></i>&nbsp;Art-74: Digital Media</h6></a>
+        <a href="website.html"><h6><i class="fa fa-fw fa-code" style="font-size:16px; line-height: 0px;"></i></i>&nbsp;About this Website</h6></a>
+      </div>
+      <a href="about.html"><i class="fa fa-fw fa-user-o"></i>About</a>
+      <a href="contact.html"><i class="fa fa-fw fa-envelope"></i>Contact</a>
     </div>
 
-    <hr>
+    <div id="main">
 
-    <div class = "flexbox-container">
+      <h1><button class="openbtn" onclick="openNav()">☰</button>
+      <a href="index.html"><mark>&nbsp;Winnie Liang&nbsp;</mark></a></h1>
 
-      <div class = "flexbox-item">
-        <a href = "media/vertical.jpg" target = "_blank">
-          <img src = "media/vertical.jpg" alt = "Vertical Identity">
-        </a>
+      <h2><mark>&nbsp;Art-02: Artists in Culture&nbsp;</mark></h2>
 
-        <a href = "media/horizontal.jpg" target = "_blank">
-          <img src = "media/horizontal.jpg" alt = "Horizontal Identity">
-        </a>
+      <h3>"This is an introductory course examining the roles that artists play in contemporary culture. Through critical reading, writing, discussions and problem-solving, students will consider principles of form, theory and research as they are applied to real-world situations confronted by contemporary artists."</h3>
 
-        <a href = "media/intersectionality.jpg" target = "_blank">
-          <img src = "media/intersectionality.jpg" alt = "Intersectional Identity">
-        </a>
+      <div class = "flexbox-container">
 
-        <h3><i>"Intersectionality"</i>, Graphic Design, </h3>
-        <p1>(Click on the image to view on another tab if needed to see smaller details.)</p1>
-        <p>Three art pieces exploring the concepts of intersectionality.
+        <div class = "flexbox-item">
+          <a href = "media/vertical.jpg" target = "_blank">
+            <img src = "media/vertical.jpg" alt = "Vertical Identity">
+          </a>
+
+          <a href = "media/horizontal.jpg" target = "_blank">
+            <img src = "media/horizontal.jpg" alt = "Horizontal Identity">
+          </a>
+
+          <a href = "media/intersectionality.jpg" target = "_blank">
+            <img src = "media/intersectionality.jpg" alt = "Intersectional Identity">
+          </a>
+
+          <h4><i>"Intersectionality"</i>, Graphic Design, </h4>
+          <p>Three art pieces exploring the concepts of intersectionality.
           The vertical one is a mosaic of old photos of me and photos that remind me of my childhood. There’s lanterns and dragon, the one used for dragon dancing, and other cultural stuff. I used Lightroom and photoshop for this.
           I went through a really dark time in high school, so the middle portrait is supposed to represent it. I was really lost in what I wanted to do, my sexuality, and my relationships with other people. I used photoshop and audacity to data bend for this one.
           The last one represents my discovery of digital media, also during high school. It’s now my major. I also wanted to show that despite my family being Chinese, they reluctantly accepted my decision to not go into the medical or law field. I used photoshop for this one.
-        </p><hr>
-        <p1>(All descriptions below were taken from professor Michelle Wilson):
-        <p><strong>Portrait One: Vertical Identity</strong> -- Your vertical identity is the identity you inherit from your family. [This is] your identity rooted in where you were born, your ethnicity, race, class, your mother tongue.</p>
-        <p><strong>Portrait Two: Horizontal Identity</strong> -- Your horizontal identity is the identity you decide or discover about yourself as you become an adult. It can be an identity about the community you associate with, the religion you choose to practice, the discovery that the gender or sexual identity you were presumed to have at birth does not match who you are. It can also be a series of questions, you may not know entirely who you are yet – so the portrait can explore questions such as, “Who Am I? Who Do I Want to Be?”</p>
-        <p><strong>Portrait One: Intersectional Identity</strong> -- >This portrait is a portrait of who you are at the intersection of your vertical and horizontal identities – how they combine, mix, blend, contrast, conflict, or however you perceive the totality of your identity.</p>
-        </p1>
+          </p><hr>
+          <p1>(All descriptions below were taken from professor Michelle Wilson):
+          <p><strong>Portrait One: Vertical Identity</strong> -- Your vertical identity is the identity you inherit from your family. [This is] your identity rooted in where you were born, your ethnicity, race, class, your mother tongue.</p>
+          <p><strong>Portrait Two: Horizontal Identity</strong> -- Your horizontal identity is the identity you decide or discover about yourself as you become an adult. It can be an identity about the community you associate with, the religion you choose to practice, the discovery that the gender or sexual identity you were presumed to have at birth does not match who you are. It can also be a series of questions, you may not know entirely who you are yet – so the portrait can explore questions such as, “Who Am I? Who Do I Want to Be?”</p>
+          <p><strong>Portrait One: Intersectional Identity</strong> -- This portrait is a portrait of who you are at the intersection of your vertical and horizontal identities – how they combine, mix, blend, contrast, conflict, or however you perceive the totality of your identity.</p>
+          </p1>
         </div>
 
-      <!-- new project would go here -->
+        <!-- new project would go here -->
+
+      </div>
 
     </div>
+
+    <script src="js/nav.js"></script>
+
+    <!--
+    <div class="footer">
+      <p>Footer</p>
+    </div>
+    -->
 
   </body>
 
