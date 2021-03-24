@@ -15,7 +15,7 @@ function setup(){
 }
 
 function draw(){
-  background(11,39,64);//background(red,green,blue);
+  background('#d4b5b0');//background(red,green,blue);
   translate(width/2,height/2);//set center points
   for (let i = 0; i < stars.length; i++) {
     stars[i].updateLocation();

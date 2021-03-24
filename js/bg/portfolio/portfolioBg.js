@@ -4,7 +4,7 @@ var canvas;
 let fr = 60;
 
 var hMap, sMap, bMap;
-var backH = 150, backS = 100, backL = 80;
+var backH = 50, backS = 40, backL = 80;
 
 var changeDirection;
 
@@ -13,7 +13,7 @@ var stars = [];
 function setup() {
 
   canvas = createCanvas(windowWidth, windowHeight);
-  canvas.position(0,0);
+  canvas.position(0, 0, 'fixed');
   canvas.style('z-index', '-100');
 
   colorMode(HSL);
@@ -36,7 +36,7 @@ function draw() {
 
   for (var i = 0; i < stars.length; i++) {
 
-	stars[i].draw();
+    stars[i].draw();
     stars[i].move();
 
   }
@@ -49,21 +49,20 @@ function drawBackground() {
 
   backgroundColor = color(backH, backS, backL);
 
-
 }
 
 function shiftBackground() {
 
-  if(backH <= 160) {
+  if(backH <= 0) {
     changeDirection = true;
-  } else if(backH >= 270) {
+  } else if(backH >= 120) {
     changeDirection = false;
   }
 
   if (changeDirection == false) {
-    backH -= 0.3;
+    backH -= 0.1;
   } else if (changeDirection == true) {
-    backH += 0.3;
+    backH += 0.1;
   }
 
 }

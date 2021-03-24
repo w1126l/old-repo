@@ -13,8 +13,8 @@ body { /* for everything */
 mark { /* fix for portolios */
   background: 0;
   /*background-color: rgba(11,39,64,0.4);*/
-  color: #0e3150;
-  text-shadow: 2px 2px 8px #f7e9e3;
+  color: #383e56;
+  /*text-shadow: 2px 2px 8px #f6ecf0;*/
 }
 
 h1 { /* name and side-nav icon */
@@ -23,13 +23,13 @@ h1 { /* name and side-nav icon */
   display: inline;
   text-decoration: none;
   border-radius: 4px;
-  color: #0e3150;
-  text-shadow: 2px 2px 8px #f7e9e3;
+  color: #383e56;
+  text-shadow: 2px 2px 8px #f6ecf0;
   position: fixed;
   z-index: 100;
 }
 mark:hover, h1:hover, .openbtn:hover {
-  color: #3e5a72;
+  color: #4b5166;
 }
 
 h2 { /* portfolio on-page titles */
@@ -38,25 +38,25 @@ h2 { /* portfolio on-page titles */
   font-weight: bold;
   text-align: right;
   right: 10%;
-  color: #0e3150;
+  color: #383e56;
   padding: 40px 30px 10px 30px;
 }
 
 h3 { /* portfolio on-page descriptions */
-  text-align: center;
+  text-align: right;
   padding: 0px 30px 0px 80px;
   font-size: 18px;
   font-style: italic;
-  color: #0e3150;
+  color: #383e56;
 }
 
 h4 { /* portfolio on-page project titles */
-  font-size: 40px;
+  font-size: 30px;
   padding: 0px;
   text-align: center;
   font-weight: bold;
   line-height: 20px;
-  color: #ffc0c2;
+  color: #383e56;
 }
 
 h6 { /* side-nav dropdown button titles */
@@ -66,12 +66,12 @@ h6 { /* side-nav dropdown button titles */
   font-weight: lighter;
   line-height: 0px;
   padding: 10px;
-  color: #f7e9e3;
+  color: #f6ecf0;
   white-space: nowrap;
 }
 
 p { /* description */
-  padding: 0px 0px 5px 0px;
+  padding: 0px;
   font-size: 15px;
   text-align: center;
 }
@@ -91,10 +91,16 @@ img {
 
 a {
   text-decoration: none;
-  color: black;
+  color: #383e56;
 }
 a:hover {
-  color: #d6fcff;
+  color: #878b99;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .footer {
@@ -121,7 +127,7 @@ a:hover {
   width: 70%;
   margin-top: 60px;
   padding: 40px;
-  background-color: #f7e9e3;
+  background-color: #eedad1;
 }
 
 /* embeded projects */
@@ -149,7 +155,7 @@ a:hover {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #0e3150;
+  background-color: #383e56;
   opacity: 95%;
   overflow-x: hidden;
   transition:0.5s;
@@ -157,10 +163,10 @@ a:hover {
 }
 
 .sidenav a { /* side nav titles */
-  padding: 8px 8px 8px 32px;
+  padding: 8px 8px 8px 22px;
   text-decoration: none;
   font-size: 25px;
-  color: #f7e9e3;
+  color: #eedad1;
   display: block;
   transition: 0.3s;
 }
@@ -174,8 +180,8 @@ a:hover {
   border-style: none;
   outline-style: none;
   background: rgba(0,0,0,0);
-  color: #0e3150;
-  text-shadow: 2px 2px 8px #f7e9e3;
+  color: #383e56;
+  text-shadow: 2px 2px 8px #eedad1;
   font-size: 60px;
 }
 
@@ -185,15 +191,15 @@ a:hover {
   right: 25px;
   font-size: 36px;
   margin-left: 50px;
-  color: #f7e9e3;
+  color: #eedad1;
 }
 
 /* dropdown button */
 .dropdown-btn {
   text-decoration: none;
   font-size: 26px;
-  padding: 10px 10px 10px 32px;
-  color: #f7e9e3;
+  padding: 10px 10px 10px 22px;
+  color: #eedad1;
   display: block;
   border: none;
   background: none;
@@ -204,18 +210,18 @@ a:hover {
   transition: 0.8s;
 }
 .dropdown-btn:hover { /* hovering over button */
-  color: #f7e9e3;
+  color: #eedad1;
 }
 
 .active { /* active dropdown button */
-  background-color: #3e5a72;
+  background-color: #4b5166;
   color: white;
 }
 
 .dropdown-btn:after {
   content: "+";
   font-size: 15px;
-  color: #f7e9e3;
+  color: #eedad1;
   float: right;
   margin-left: 5px;
 }
@@ -261,9 +267,9 @@ a:hover {
 .about h3 {
   display: block;
   position: static;
-  padding: 0px 30px 0px 30px;
+  padding: 0px;
   font-size: 20px;
-  text-align: left;
+  text-align: center;
 }
 
 .about p {
