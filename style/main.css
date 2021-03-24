@@ -65,8 +65,8 @@ h6 { /* side-nav dropdown button titles */
   margin: 0;
   font-weight: lighter;
   line-height: 0px;
-  padding: 10px;
-  color: #f6ecf0;
+  padding: 10px 20px 10px 20px;
+  color: #eedad1;
   white-space: nowrap;
 }
 
@@ -154,9 +154,10 @@ a:hover {
   position: fixed;
   z-index: 1;
   top: 0;
+  bottom: 0;
   left: 0;
   background-color: #383e56;
-  opacity: 95%;
+  opacity: 90%;
   overflow-x: hidden;
   transition:0.5s;
   padding-top: 60px;
@@ -181,7 +182,7 @@ a:hover {
   outline-style: none;
   background: rgba(0,0,0,0);
   color: #383e56;
-  text-shadow: 2px 2px 8px #eedad1;
+  /*text-shadow: 2px 2px 8px #eedad1;*/
   font-size: 60px;
 }
 
